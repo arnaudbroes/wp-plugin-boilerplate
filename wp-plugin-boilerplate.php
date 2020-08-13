@@ -23,6 +23,6 @@ if ( ! defined( 'WP_PLUGIN_BOILERPLATE_DIR' ) ) {
 	define( 'WP_PLUGIN_BOILERPLATE_DIR', dirname( WP_PLUGIN_BOILERPLATE_FILE ) );
 }
 
-require_once( WP_PLUGIN_BOILERPLATE_DIR . '/inc/wpPluginBoilerplate.php' );
+require_once( WP_PLUGIN_BOILERPLATE_DIR . '/app/wpPluginBoilerplate.php' );
 
 wpb();
