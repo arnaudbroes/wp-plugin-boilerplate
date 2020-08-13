@@ -1,0 +1,15 @@
+{
+	"name": "arnaudbroes/wpPluginBoilerplate",
+	"description": "Personal boilerplate for WordPress plugins.",
+	"config": {
+		"preferred-install": "dist",
+		"platform": {
+			"php": "5.4"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"wpBoilerplatePlugin": "inc/"
+		}
+	}
+}
