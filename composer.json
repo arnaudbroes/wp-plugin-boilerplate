@@ -1,5 +1,5 @@
 {
-	"name": "arnaudbroes/wpPluginBoilerplate",
+	"name": "arnaudbroes/wppluginboilerplate",
 	"description": "Personal boilerplate for WordPress plugins.",
 	"config": {
 		"preferred-install": "dist",
@@ -9,7 +9,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"wpBoilerplatePlugin": "inc/"
+			"WpPluginBoilerplate\\Plugin\\": "app/"
 		}
 	}
 }

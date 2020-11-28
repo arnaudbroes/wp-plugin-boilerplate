@@ -1,5 +1,5 @@
 <?php
-namespace wpPluginBoilerplate {
+namespace WpPluginBoilerplate\Plugin {
 	/**
 	 * The main class.
 	 *
@@ -40,7 +40,9 @@ namespace wpPluginBoilerplate {
 		 */
 		private function init() {
 			$this->constants();
-			// Do something here.
+
+			require WP_PLUGIN_BOILERPLATE_DIR . '/vendor/autoload.php';
+			new Admin\Admin();
 		}
 
 		/**
@@ -81,6 +83,6 @@ namespace {
 	 * @return wpPluginBoilerplate The instance.
 	 */
 	function wpb() {
-		return wpPluginBoilerplate\wpPluginBoilerplate::instance();
+		return \WpPluginBoilerplate\Plugin\wpPluginBoilerplate::instance();
 	}
 }
